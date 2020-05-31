@@ -23,14 +23,14 @@ These instructions will get basic service up and running on Aiven which can be i
 ### Prerequisites
 
 This project is based on the following:
--- python 3.7.4 (Any Python IDE example PyCharm)
--- kafka-python (latest version)
+i) python 3.7.4 (Any Python IDE example PyCharm)
+ii) kafka-python (latest version)
 
 Install below dependencies 
  
- pip install pymongo
- python -m pip install psycopg2
- pip install kafka-python //ensure it is compatible with python version 3.7.4 (producer and consumer to be used from kafka-python module)
+ i) pip install pymongo
+ ii) python -m pip install psycopg2
+ iii) pip install kafka-python //ensure it is compatible with python version 3.7.4 (producer and consumer to be used from kafka-python module)
 
 ### Installing
 
@@ -41,7 +41,8 @@ Reference Link: https://help.aiven.io/en/articles/489572-getting-started-with-ai
 
 2) Create below table in POSTGRES db:
 
-# prepare SQL for below schema Users
+Below is schema for table Users (aligned with data which Topic "Users" would contain)
+
 CREATE TABLE Users (
     id UUID PRIMARY KEY,
     str_col VARCHAR(500),
@@ -79,13 +80,14 @@ CREATE TABLE Users (
 ## Running the tests
 
 Run following processes:
-> python producer.py
-> python consumer.py
+i) python producer.py
+ii) python consumer.py
 
 For unit testing:
-> python -m unittest
+i) python -m unittest
 
-Above command will run all unit testcases in the 'kafka-demo' repository.
+Above command will run all unit testcases in the 'kafka-demo' repository. Ensure sample input json file along with credential files are stored in unit testing folder inside repository 'kafka-demo'.
+
 ** Please note that for all ok connection testcases to pass, do below:
 i) kafkaConfig.py
   insert your service URI
