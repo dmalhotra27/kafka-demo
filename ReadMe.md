@@ -51,7 +51,7 @@ CREATE TABLE Users (
      float_col DECIMAL
  		);
  
-3) Ensure dependencies mentioned in prerequisutes are installed
+3) Ensure dependencies mentioned in prerequisites are installed
  
 4) Sample Input data (Data transfer from producer to consumer) to be stored in below JSON file inside repository 'kafka-demo'
    input_data.json
