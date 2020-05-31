@@ -88,6 +88,9 @@ i) python -m unittest
 
 Above command will run all unit testcases in the 'kafka-demo' repository. Ensure sample input json file along with credential files are stored in unit testing folder inside repository 'kafka-demo'.
 
+Link for reference:
+ https://docs.python.org/3/library/unittest.html
+
 ** Please note that for all ok connection testcases to pass, do below:
 i) kafkaConfig.py
   insert your service URI
@@ -96,3 +99,6 @@ ii) postgres-dbconfig.py
    insert your host, password & port
 
 ** For security reasons, above have been removed.
+
+Additional Links:
+https://towardsdatascience.com/getting-started-with-apache-kafka-in-python-604b3250aa05
